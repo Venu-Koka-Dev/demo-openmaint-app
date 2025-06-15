@@ -23,13 +23,13 @@ ALTER USER postgres WITH PASSWORD 'PSSWD';
 
 wget http://dl.alfresco.com/release/community/build-3370/alfresco-community-3.4.d-installer-linux-x64.bin
 chmod a+x alfresco-community-3.4.d-installer-linux-x64.bin
-sudo ./alfresco-community-3.4.d-installer-linux-x64.bin —mode text
+sudo ./alfresco-community-3.4.d-installer-linux-x64.bin —-mode text
 
 Choose 'English' (Type in 1)
-﻿﻿Accept SharePoint, Records Management, Web Quick Start and Web Project management
-﻿﻿Select an Installation Type 1 - Easy
+﻿﻿Accept: SharePoint, Records Management, Web Quick Start, Web Project management
+﻿﻿Select an Installation Type: 1 - Easy
 ﻿Leave the installation folder as default
-﻿﻿select the bundled MySQL database (Type in 1)
+﻿﻿Select the bundled MySQL database: Type in 1
 ﻿﻿Create the database password (Just type them in)
 ﻿﻿Create Alfresco's password (Just type them in)
 ﻿﻿Decline the installation as a service (It breaks anyways, so we're handling it ourselves. (type n)
