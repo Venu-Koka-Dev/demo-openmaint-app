@@ -41,18 +41,16 @@ sudo ./alfresco.sh status
 # Jika status RUNNING
 sudo ./alfresco.sh stop
 
-Buka file Tomcat server.xml
+# Update the Tomcat file - server.xml
 sudo nano tomcat/conf/server.xml
-// Line 22
-‹Server port="8006" shutdown="SHUTDOWN">
-// Line 69 (lol)
-«Connector port="8081" URIEncoding="UTF-8" protocol="НТТР/1.1"
-connectionTimeout="20000" redirectPort="8443" />
+// In Line 22: ‹Server port="8006" shutdown="SHUTDOWN">
+// In Line 69: (lol) «Connector port="8081" URIEncoding="UTF-8" protocol="НТТР/1.1" connectionTimeout="20000" redirectPort="8443" />
 
 sudo ./alfresco.sh start
 
 # Install GeoServer
-sudo adduser geoserver  ;  sudo usermod -aG sudo geoserver  ;  sudo su - geoserver 
+sudo adduser geoserver;sudo usermod -aG sudo geoserver;sudo su - geoserver 
+## Password: geoserver123
 wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-t
 unzip -d /home/geoserver/server geoserver-2.21.0-bin.zip 
 nano /home/geoserver/server/start.ini
