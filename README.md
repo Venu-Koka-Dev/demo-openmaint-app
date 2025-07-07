@@ -51,12 +51,13 @@ sudo ./alfresco.sh start
 # Install GeoServer
 sudo adduser geoserver;sudo usermod -aG sudo geoserver;sudo su - geoserver 
 ## Password: geoserver123
-wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-t
+wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-bin.zip
 unzip -d /home/geoserver/server geoserver-2.21.0-bin.zip 
 nano /home/geoserver/server/start.ini
 
 Ubah port jetty.http.port menjadi jetty.http.port=8082
-Buat file service geoserver agar bisa berjalan otomatis $ sudo nano /usr/lib/systemd/system/geoserver.service
+Buat file service geoserver agar bisa berjalan otomatis 
+sudo nano /usr/lib/systemd/system/geoserver.service
 
 [Unit]
 
