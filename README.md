@@ -14,16 +14,16 @@ sudo apt-get update
 sudo apt-get install postgresql-12
 sudo apt install postgresql-12-postgis-3 libpostgis-java
 sudo passwd postgres
-## Password: postgrespass, admin123
+## Password: postgrespass
 sudo usermod -aG sudo postgres
 sudo -u postgres psql template1
-ALTER USER postgres WITH PASSWORD 'PSSWD';
+ALTER USER postgres WITH PASSWORD 'admin123';
 ## To exit from the Postgres prompt: \q
-
+## Password: admin123
 
 wget http://dl.alfresco.com/release/community/build-3370/alfresco-community-3.4.d-installer-linux-x64.bin
 chmod a+x alfresco-community-3.4.d-installer-linux-x64.bin
-sudo ./alfresco-community-3.4.d-installer-linux-x64.bin —-mode text
+sudo ./alfresco-community-3.4.d-installer-linux-x64.bin --mode text
 
 Choose 'English' (Type in 1)
 ﻿﻿Accept: SharePoint, Records Management, Web Quick Start, Web Project management
